@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 2</h1>
+    <p>
+      Знайти суму та різницю двох цілих чисел. Результат вивести у формі таблиці
+    </p>
+
+    <script>
+      //1.Вводимо необхідні дані
+      let num1 = parseInt(prompt('Введіть перше число', '0'))
+      let num2 = parseInt(prompt('Введіть друге число', '0'))
+
+      //2.Знаходимо результат
+      let sum = num1 + num2
+      let diff = num1 - num2
+
+      //3.Виводимо результа
+      document.write(`
+        <table border="2px">
+          <tr>
+              <th>Шуканий результат</th>
+              <th>Отримане значення</th>
+          </tr>
+          <tr>
+              <th>Сума</th>
+              <td>${sum}</td>
+          </tr>
+                    <tr>
+              <th>Різниця</th>
+              <td>${diff}</td>
+          </tr>
+        </table>
+      `)
+    </script>
+  </body>
+</html>

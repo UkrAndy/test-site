@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Задача 1</h1>
+
+    <p>
+      Дано значення змінних Х і Y. Обислити значення виразів: 1) s1= x+3 2) s1=
+      cos(x + 3 + y^7 )
+    </p>
+
+    <script>
+      //1.Вводимо необхідні дані
+      let x = parseInt(prompt('Введіть X', '0'))
+      let y = parseInt(prompt('Введіть Y', '0'))
+
+      //2.Знаходимо результат
+      let s1 = x + 3
+      let s2 = Math.cos(x + 3 + Math.pow(y, 7))
+
+      //3.Виводимо результа
+      document.write(`
+        s1 = ${s1} <br>
+        s2 = ${s2}
+      `)
+    </script>
+  </body>
+</html>
